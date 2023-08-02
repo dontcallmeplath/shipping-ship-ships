@@ -1,0 +1,36 @@
+    participant main
+    participant CargoList
+    participant HaulerList
+    participant DockList
+    participant Database
+
+    main->>CargoList: I need the function reference for generating HTML for Cargo
+    CargoList-->>main: Gladly.
+    main->>HaulerList: I need the function reference for generating HTML for Haulers
+    HaulerList-->>main: Sure! Here you go.
+    main->>DockList: Provide the HTML generation function for Docks
+    DockList-->>main: Here is my wonderful DockList function.
+    
+note right of main: Invoke HaulerList function
+HaulerList-->>Database: I need all the hauler objects
+    Database-->>HaulerList: Here's a copy of them
+    loop
+        HaulerList->>HaulerList: Convert each object to an `<li>`
+    end
+    HaulerList-->>main: Here's all the generated HTML
+    note right of main: Invoke CargoList function
+    CargoList-->>Database: I need all the walker objects
+    Database-->>CargoList: Here's a copy of them
+    loop
+        CargoList->>CargoList: Convert each object to an `<li>`
+    end
+    CargoList-->>main: Here's all the generated HTML
+    note right of main: Invoke DockList function
+    DockList-->>Database: I need all the dock objects
+    Database-->>DockList: Here's a copy of them
+    loop
+        DockList->>DockList: Convert each object to an `<li>`
+    end
+    DockList-->>main: Here's all the generated HTML
+    
+    note right of main: Update the innerHTML of the <main> element in the DOM.
