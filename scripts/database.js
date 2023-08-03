@@ -31,42 +31,52 @@ const database = {
     {
       id: 1,
       name: "Corona Austrina",
+      haulerid: 2,
     },
     {
       id: 2,
       name: "Camelopardalis",
+      haulerid: 4,
     },
     {
       id: 3,
       name: "Canes Venatici",
+      haulerid: 1,
     },
     {
       id: 4,
       name: "Tranquility",
+      haulerid: 3,
     },
     {
       id: 5,
       name: "Serenity",
+      haulerid: 4,
     },
     {
       id: 6,
       name: "Spatial Delivery",
+      haulerid: 1,
     },
     {
       id: 7,
       name: "Epsilon Eridani",
+      haulerid: 3,
     },
     {
       id: 8,
       name: "Panamax",
+      haulerid: 2,
     },
     {
       id: 9,
       name: "Handymax",
+      haulerid: 3,
     },
     {
       id: 10,
       name: "Aframax",
+      haulerid: 1,
     },
   ],
 };
