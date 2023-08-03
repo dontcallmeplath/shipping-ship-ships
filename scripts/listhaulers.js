@@ -27,6 +27,6 @@ document.addEventListener("click", (clickEvent) => {
         counter++;
       }
     }
-    window.alert(`This hauler is carrying ${counter} shipping ships.`);
+    itemClicked.innerHTML = `This hauler is carrying ${counter} shipping ships.`;
   }
 });

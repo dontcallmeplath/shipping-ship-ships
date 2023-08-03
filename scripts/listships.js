@@ -26,8 +26,6 @@ document.addEventListener("click", (clickEvent) => {
         haulerName = hauler.name;
       }
     }
-    window.alert(
-      `${itemClicked.dataset.name} is being hauled by ${haulerName}`
-    );
+    itemClicked.innerHTML = `${itemClicked.dataset.name} is being hauled by ${haulerName}.`;
   }
 });
