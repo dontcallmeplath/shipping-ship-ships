@@ -1,4 +1,5 @@
 import { getDocks } from "./database.js";
+import { getHaulerArray } from "./listhaulers.js";
 
 const docks = getDocks();
 export const dockList = () => {
@@ -9,3 +10,9 @@ export const dockList = () => {
   docksHTML += "</ul>";
   return docksHTML;
 };
+
+document.addEventListener("click", (clickEvent) => {
+  const itemClicked = clickEvent.target;
+
+  // display message re dock name + loading state + current hauler
+});
