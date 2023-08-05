@@ -9,21 +9,25 @@ const database = {
     {
       id: 1,
       name: "Pioneering Spirit",
+      dockid: 4,
       loading: [true, false],
     },
     {
       id: 2,
       name: "Hauly McHaulface",
+      dockid: 3,
       loading: [true, false],
     },
     {
       id: 3,
       name: "Seawise Giant",
+      dockid: 2,
       loading: [true, false],
     },
     {
       id: 4,
       name: "The Revenge",
+      dockid: 1,
       loading: [true, false],
     },
   ],

@@ -30,6 +30,7 @@ document.addEventListener("click", (clickEvent) => {
       }
     }
     itemClicked.innerHTML = `This hauler is carrying ${counter} shipping ships.`;
+    console.log(haulerArray.join());
   }
 });
 
