@@ -3,7 +3,6 @@ import { getShips } from "./database.js";
 
 const haulers = getHaulers();
 const shippingShips = getShips();
-const haulerArray = [];
 
 export const haulerList = () => {
   let haulerHTML = `<ul id="haulers">`;
@@ -26,14 +25,8 @@ document.addEventListener("click", (clickEvent) => {
     for (const ship of shippingShips) {
       if (parseInt(haulerID) === ship.haulerid) {
         counter++;
-        haulerArray.push(ship.name);
       }
     }
-    itemClicked.innerHTML = `This hauler is carrying ${counter} shipping ships.`;
-    console.log(haulerArray.join());
+    itemClicked.innerHTML = `The ${itemClicked.dataset.name} is carrying ${counter} shipping ships.`;
   }
 });
-
-export const getHaulerArray = () => {
-  return haulerArray;
-};
